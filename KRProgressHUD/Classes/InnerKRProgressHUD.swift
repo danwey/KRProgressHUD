@@ -18,7 +18,7 @@ private let messageLabelMinWidth = CGFloat(120)
 
 extension KRProgressHUD {
     func configureProgressHUDView() {
-        window.windowLevel = .normal
+        window.windowLevel = UIWindow.Level(rawValue: UIWindow.Level.normal.rawValue + 1)
         hudViewController.view.translatesAutoresizingMaskIntoConstraints = false
 
         hudView.backgroundColor = .white
